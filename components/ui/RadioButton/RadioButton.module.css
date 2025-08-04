@@ -1,0 +1,95 @@
+.radioButton {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: var(--spacing-6);
+  outline: 1px solid var(--border-secondary);
+  border-radius: var(--corner-radius-medium);
+  font-family: inherit;
+  color: var(--typography-colours-secondary);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    outline: 1px solid var(--border-primary);
+  }
+
+  &:active {
+    background: var(--surface-primary);
+    color: var(--typography-colours-primary);
+    box-shadow: inset 0 0 0 1px var(--border-primary);
+  }
+
+  &.checked {
+    background: var(--surface-primary);
+    color: var(--typography-colours-primary);
+    outline: 1px solid var(--border-primary);
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible .circle {
+    outline: 2px solid var(--components-focus-outline);
+    outline-offset: 1px;
+  }
+
+  .text {
+    flex-grow: 1;
+    text-align: left;
+  }
+}
+
+.simpleButton {
+  outline: none;
+  background: transparent;
+  padding: var(--spacing-0);
+  width: fit-content;
+
+  .text {
+    margin-right: var(--spacing-4);
+    font-family: inherit;
+  }
+
+  &:hover,
+  &.checked {
+    outline: none;
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+/* Custom radio button styles */
+.radioButton input[type='radio'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: var(--spacing-6);
+  height: var(--spacing-6);
+  border: 1px solid var(--typography-colours-primary);
+  border-radius: var(--corner-radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+/* Inner circle when checked */
+.radioButton input[type='radio']:checked::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--typography-colours-primary);
+  border-radius: var(--corner-radius-full);
+  position: absolute;
+}
+
+.radioButton input[type='radio']:focus-visible {
+  outline: 2px solid var(--components-focus-outline);
+  outline-offset: 1px;
+}

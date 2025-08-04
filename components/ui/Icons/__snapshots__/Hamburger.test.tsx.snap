@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hamburger icon test should render the Hamburger icon unchanged 1`] = `
+<div>
+  <svg
+    fill="none"
+    height="16"
+    viewBox="0 0 18 16"
+    width="18"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 .5h18V2H0V.5ZM0 14h18v1.5H0V14Zm0-9h18v1.5H0V5Zm0 4.5h18V11H0V9.5Z"
+      fill="var(--neutral-neutral-1000)"
+    />
+  </svg>
+</div>
+`;

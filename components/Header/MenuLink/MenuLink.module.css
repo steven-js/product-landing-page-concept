@@ -1,0 +1,27 @@
+.menuItem {
+  display: flex;
+}
+
+.menuItem a {
+  font-size: var(--typography-styles-p2-size);
+  line-height: var(--typography-styles-p2-line-height);
+  letter-spacing: var(--typography-styles-p2-letter-spacing);
+  color: var(--typography-colours-secondary);
+  /* Figma has 44px height but we would need 10px padding top and bottom */
+  padding: var(--spacing-5) var(--spacing-5);
+  border-radius: var(--corner-radius-medium);
+  background-color: var(--neutral-neutral-0);
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--typography-colours-primary);
+    background-color: var(--cream-cream-200);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--components-focus-outline);
+    z-index: 1;
+  }
+}

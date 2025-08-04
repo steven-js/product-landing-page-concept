@@ -1,0 +1,28 @@
+.productDescription {
+  color: var(--typography-colours-secondary);
+}
+
+.productDescription p {
+  margin-bottom: var(--spacing-2);
+}
+
+.productDescription ul {
+  list-style: none;
+  padding-left: var(--spacing-4);
+}
+
+.productDescription ul li {
+  position: relative;
+  padding-left: var(--spacing-6);
+}
+
+.productDescription ul li::before {
+  content: '';
+  position: absolute;
+  left: var(--spacing-0);
+  top: 10px;
+  width: var(--spacing-2);
+  height: var(--spacing-2);
+  background-color: var(--typography-colours-secondary);
+  border-radius: var(--corner-radius-full);
+}

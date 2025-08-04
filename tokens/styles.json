@@ -1,0 +1,110 @@
+{
+  "Display": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "{Typography.Styles.Display.Font}",
+      "fontSize": "{Typography.Styles.Display.Size}",
+      "fontWeight": "{Typography.Styles.Display.Weight}",
+      "letterSpacing": "{Typography.Styles.Display.Letter-Spacing}",
+      "lineHeight": "{Typography.Styles.Display.Line-Height}",
+      "textTransform": "none",
+      "textDecoration": "none"
+    }
+  },
+  "H1": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "{Typography.Styles.H1.Font}",
+      "fontSize": "{Typography.Styles.H1.Size}",
+      "fontWeight": "{Typography.Styles.H1.Weight}",
+      "letterSpacing": "{Typography.Styles.H1.Letter-Spacing}",
+      "lineHeight": "{Typography.Styles.H1.Line-Height}",
+      "textTransform": "none",
+      "textDecoration": "none"
+    }
+  },
+  "H2": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "{Typography.Styles.H2.Font}",
+      "fontSize": "{Typography.Styles.H2.Size}",
+      "fontWeight": "{Typography.Styles.H2.Weight}",
+      "letterSpacing": "{Typography.Styles.H2.Letter-Spacing}",
+      "lineHeight": "{Typography.Styles.H2.Line-Height}",
+      "textTransform": "none",
+      "textDecoration": "none"
+    }
+  },
+  "H3": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "{Typography.Styles.H3.Font}",
+      "fontSize": "{Typography.Styles.H3.Size}",
+      "fontWeight": "{Typography.Styles.H3.Weight}",
+      "letterSpacing": "{Typography.Styles.Display.Letter-Spacing}",
+      "lineHeight": "{Typography.Styles.H3.Line-Height}",
+      "textTransform": "none",
+      "textDecoration": "none"
+    }
+  },
+  "S1": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "{Typography.Styles.S1.Font}",
+      "fontSize": "{Typography.Styles.S1.Size}",
+      "fontWeight": "{Typography.Styles.S1.Weight}",
+      "letterSpacing": "{Typography.Styles.S1.Letter-Spacing}",
+      "lineHeight": "{Typography.Styles.S1.Line-Height}",
+      "textTransform": "none",
+      "textDecoration": "none"
+    }
+  },
+  "S2": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "{Typography.Styles.S2.Font}",
+      "fontSize": "{Typography.Styles.S2.Size}",
+      "fontWeight": "{Typography.Styles.S2.Weight}",
+      "letterSpacing": "{Typography.Styles.S2.Letter-Spacing}",
+      "lineHeight": "{Typography.Styles.S2.Line-Height}",
+      "textTransform": "none",
+      "textDecoration": "none"
+    }
+  },
+  "P1": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "{Typography.Styles.P1.Font}",
+      "fontSize": "{Typography.Styles.P1.Size}",
+      "fontWeight": "{Typography.Styles.P1.Weight}",
+      "letterSpacing": "{Typography.Styles.P1.Letter-Spacing}",
+      "lineHeight": "{Typography.Styles.P1.Line-Height}",
+      "textTransform": "none",
+      "textDecoration": "none"
+    }
+  },
+  "P2": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "{Typography.Styles.P2.Font}",
+      "fontSize": "{Typography.Styles.P2.Size}",
+      "fontWeight": "{Typography.Styles.P2.Weight}",
+      "letterSpacing": "{Typography.Styles.P2.Letter-Spacing}",
+      "lineHeight": "{Typography.Styles.P2.Line-Height}",
+      "textTransform": "none",
+      "textDecoration": "none"
+    }
+  },
+  "C1": {
+    "$type": "typography",
+    "$value": {
+      "fontFamily": "{Typography.Styles.C1.Font}",
+      "fontSize": "{Typography.Styles.C1.Size}",
+      "fontWeight": "{Typography.Styles.C1.Weight}",
+      "letterSpacing": "{Typography.Styles.C1.Letter-Spacing}",
+      "lineHeight": "{Typography.Styles.C1.Line-Height}",
+      "textTransform": "none",
+      "textDecoration": "none"
+    }
+  }
+}

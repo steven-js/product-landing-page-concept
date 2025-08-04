@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chevron icon test should render the Chevron icon unchanged 1`] = `
+<div>
+  <svg
+    fill="none"
+    height="16"
+    viewBox="0 0 10 16"
+    width="10"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="m9.275 8.225-7.5 7.5-1.05-1.05 6.45-6.45-6.45-6.45 1.05-1.05 7.5 7.5Z"
+      fill="var(--neutral-neutral-1000)"
+    />
+  </svg>
+</div>
+`;

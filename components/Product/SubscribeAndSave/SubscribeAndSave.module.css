@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  gap: var(--spacing-6);
+
+  .inner {
+    display: grid;
+    gap: var(--spacing-6);
+    background-color: var(--surface-brand);
+    padding: var(--spacing-6);
+    border: 1px solid var(--border-minimal);
+    border-radius: var(--corner-radius-medium);
+
+    .options {
+      display: grid;
+      gap: var(--spacing-4);
+      grid-template-columns: repeat(2, 1fr);
+      flex-direction: row;
+
+      @media (max-width: 1250px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

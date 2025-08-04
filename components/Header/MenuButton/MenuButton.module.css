@@ -1,0 +1,43 @@
+.icon {
+  all: unset;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-5);
+  width: var(--spacing-8);
+  height: var(--spacing-8);
+  box-sizing: content-box;
+  border-radius: var(--components-button-secondary-padding-radius-roundness);
+  background-color: var(--neutral-neutral-0);
+  transition: background-color 0.2s ease-in-out;
+
+  &.search,
+  &.account {
+    display: none;
+  }
+
+  &.hamburger {
+    display: flex;
+  }
+
+  @media (min-width: 928px) {
+    &.search,
+    &.account {
+      display: flex;
+    }
+
+    &.hamburger {
+      display: none;
+    }
+  }
+
+  &:hover {
+    background-color: var(--cream-cream-200);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--components-focus-outline);
+    z-index: 1;
+  }
+}

@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  gap: var(--spacing-2);
+  flex-wrap: wrap;
+  align-items: center;
+
+  .price {
+    color: var(--typography-colours-primary);
+
+    &.subscription {
+      color: var(--typography-colours-brand);
+    }
+  }
+
+  .points {
+    color: var(--typography-colours-brand);
+  }
+
+  .previousPrice {
+    text-decoration: line-through;
+  }
+}

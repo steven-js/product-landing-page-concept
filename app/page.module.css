@@ -1,0 +1,35 @@
+.productPage {
+  margin-bottom: var(--spacing-13);
+
+  @media (min-width: 701px) {
+    margin-bottom: var(--spacing-0);
+  }
+
+  .productDetails {
+    grid-column: 1 / -1;
+    margin-top: var(--spacing-5);
+
+    @media (min-width: 701px) {
+      grid-column: 4 / 7;
+      margin-top: var(--spacing-0);
+    }
+
+    @media (min-width: 1101px) {
+      grid-column: 9 / 13;
+    }
+
+    .productDetailsInner {
+      display: grid;
+      gap: var(--spacing-7);
+
+      @media (min-width: 701px) {
+        gap: var(--spacing-8);
+      }
+    }
+
+    .productHeader {
+      display: grid;
+      gap: var(--spacing-6);
+    }
+  }
+}

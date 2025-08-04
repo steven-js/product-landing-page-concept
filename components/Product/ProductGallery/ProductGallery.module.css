@@ -1,0 +1,90 @@
+.gallery {
+  grid-column: 1 / -1;
+  display: flex;
+  grid-row: 2;
+  gap: var(--spacing-6);
+  margin-right: -16px;
+  margin-left: -16px;
+
+  @media (min-width: 701px) {
+    /* Span 3 rows so that we can reposition the Breadcrumbs on mobile */
+    grid-row: 1 / span 3;
+    flex-direction: column;
+    grid-column: 1 / 4;
+    margin-right: var(--spacing-0);
+    margin-left: var(--spacing-0);
+  }
+
+  @media (min-width: 1101px) {
+    flex-direction: row;
+    grid-column: 1 / 9;
+  }
+}
+
+.thumbnails {
+  display: none;
+  width: 140px;
+
+  /* Stack thumbnails underneath the main image between 701px and 1100px */
+  @media (min-width: 701px) and (max-width: 1100px) {
+    display: block;
+    order: 1;
+    width: 100%;
+  }
+
+  /* Position thumbnails next to main image in screen sizes larger than 1100px */
+  @media (min-width: 1101px) {
+    display: block;
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: var(--spacing-5);
+    height: auto;
+    width: 100%;
+
+    @media (min-width: 701px) and (max-width: 1100px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  .thumbnail {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: var(--corner-radius-medium);
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+
+    &:focus-visible {
+      box-shadow: 0 0 0 4px var(--components-focus-outline);
+    }
+
+    &.activeThumbnail {
+      outline: 2px solid var(--border-primary);
+    }
+  }
+}
+
+.mainImage {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  cursor: grab;
+
+  .inner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    aspect-ratio: 1 / 1;
+
+    @media (min-width: 701px) {
+      border-radius: var(--corner-radius-medium);
+    }
+  }
+}
